@@ -1,0 +1,41 @@
+{
+  "name": "simple-nodejs-backend",
+  "version": "1.0.0",
+  "description": "Simple Node.js backend with authentication",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@vendia/serverless-express": "^4.10.4",
+    "aws-amplify": "^6.15.6",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "@aws-amplify/backend": "^1.16.1",
+    "@aws-amplify/backend-cli": "^1.8.0",
+    "aws-cdk-lib": "^2.204.0",
+    "constructs": "^10.4.2",
+    "esbuild": "^0.25.9",
+    "nodemon": "^3.0.1",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "jwt",
+    "authentication",
+    "api"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
