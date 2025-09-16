@@ -8,3 +8,12 @@ backend:
         - npm install -g npm@latest
         - npm ci
         - npx ampx generate outputs --app-id $AWS_APP_ID --branch-name $AWS_BRANCH
+frontend:
+  phases:
+    build:
+      commands:
+        - echo "No frontend"
+  artifacts:
+    baseDirectory: .
+    files:
+      - '**/*'
