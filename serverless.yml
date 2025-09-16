@@ -1,0 +1,25 @@
+service: local-lambda-test
+
+provider:
+  name: aws
+  runtime: nodejs22.x
+
+functions:
+  backendApi:
+    handler: lambda.handler
+    events:
+      - http:
+          path: /
+          method: any
+      - http:
+          path: /login
+          method: post
+      - http:
+          path: /profile
+          method: get
+      - http:
+          path: /data
+          method: get
+
+plugins:
+  - serverless-offline
